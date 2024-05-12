@@ -10,7 +10,12 @@ if (nowhour < 12) {
 } else {
     a = "PM";
 }
-var b=nowhour-12
+var b=nowhour
+
+if( nowhour>13)
+    {
+        b=nowhour-12
+    }
 
 if(b<10)
 {
@@ -20,6 +25,9 @@ else
 {
     c=b
 }
+
+
+
 var d=nowminutes
 if(d<10) 
 {
